@@ -34,6 +34,7 @@ struct AddBookView: View {
                 
                 Section {
                     TextEditor(text: $review)
+                        .accessibilityLabel("Share your thoughts")
                     RatingView(rating: $rating)
                 } header: {
                     Text("Write a review")
